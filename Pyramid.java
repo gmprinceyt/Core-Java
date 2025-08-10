@@ -1,5 +1,5 @@
 
-public class InertedHeftPyramid {
+public class Pyramid {
 
     public static void InertedAndRotatedHeftPyramid(int row) {
 
@@ -37,8 +37,23 @@ public class InertedHeftPyramid {
         }
     }
 
+    public static void FLODYSTriangle(int n ){
+        int count = 1;
+        for (int i = 1; i <= n; i++){
+            //inner Loop
+            for (int j = 1; j <= i; j++){
+                System.out.print(count+" ");
+                count++;
+            }
+            System.out.println();
+        }
+    };
+
+
     public static void main(String args[]) {
         // InertedAndRotatedHeftPyramid(4);
-        InertedHeftPyramidWithNumber(5);
+        // InertedHeftPyramidWithNumber(5);
+        // FLODYSTriangle(5);
+        Zero_One_Triangle(5);
     };   
 }
