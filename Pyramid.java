@@ -38,6 +38,11 @@ public class Pyramid {
     }
 
     public static void FLODYSTriangle(int n ){
+            // 1 
+            // 2 3
+            // 4 5 6
+            // 7 8 9 10
+            // 11 12 13 14 15
         int count = 1;
         for (int i = 1; i <= n; i++){
             //inner Loop
@@ -48,6 +53,25 @@ public class Pyramid {
             System.out.println();
         }
     };
+
+    
+    public static void Zero_One_Triangle(int n){
+                // 1
+                // 01
+                // 101
+                // 0101
+                // 10101
+        for (int row = 1; row <= n; row++){
+            for (int col = 1; col <= row; col++){
+                if ((row + col)%2 == 0){
+                System.out.print(1);
+                }else {
+                System.out.print(0);
+                }
+            }
+            System.out.println(); 
+        }
+    }
 
 
     public static void main(String args[]) {
