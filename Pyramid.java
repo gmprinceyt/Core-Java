@@ -100,6 +100,19 @@ public class Pyramid {
         }
     }
 
+    public static void NumberPyramid(int n ){
+        for (int row = 1; row <= n; row++){
+            //space
+            for (int j= 1; j <= n-row; j++){
+                System.out.print(" ");
+            }
+            //star
+            for (int j= 1; j <= (2*row)-1; j++){
+                System.out.print(row);
+            }
+            System.out.println();
+        };
+    };
 
 
     public static void main(String args[]) {
@@ -107,6 +120,8 @@ public class Pyramid {
         // InertedHeftPyramidWithNumber(5);
         // FLODYSTriangle(5);
         // Zero_One_Triangle(5);
-        DIAMOND_PATTERN(5);
+        // DIAMOND_PATTERN(5);
+        // NumberPyramid(5);
+
     };   
 }
