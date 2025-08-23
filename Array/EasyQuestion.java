@@ -38,4 +38,4 @@ class EasyQuestion {
 
         PairsInArray(Arr);
     };
-}
+};
