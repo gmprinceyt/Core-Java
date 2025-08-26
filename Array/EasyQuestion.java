@@ -1,4 +1,4 @@
-class EasyQuestion {
+  class EasyQuestion {
 
     public static void ReverseArray(int arr[]){
         int start = 0, end = arr.length -1;
