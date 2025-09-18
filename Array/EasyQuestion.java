@@ -2,7 +2,6 @@
 
     public static void ReverseArray(int arr[]){
         int start = 0, end = arr.length -1;
-
         //Two Pointer Approach 
         while (start < end){
             int temp = arr[start];
@@ -17,7 +16,7 @@
     public static void PairsInArray(int arr[]){
         for (int i = 0; i < arr.length; i++){
             int pair = arr[i]; 
-            for (int j = i+1; j < arr.length; j++){
+            for (int j = i; j < arr.length; j++){
                 System.out.print(" ( " + pair + ","+ arr[j]+ " ) ");
             };
             System.out.println();
@@ -33,9 +32,6 @@
         // for (int i = 0; i <  Arr.length; i++){
         //     System.out.print( Arr[i]+ " ");
         // }
-
-
-
         PairsInArray(Arr);
     };
 };
