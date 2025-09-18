@@ -61,11 +61,27 @@ class SubArray {
         };
         System.out.print("Max SubArrays: "+max);
     }
+
+        // {1,-4,2,-9,8,1}; 
+    public static void KadaneAlgo(int arr[]){
+        int curr = 0;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i <  arr.length; i++){
+            curr += arr[i];
+            if (curr < 0) curr = 0;
+            if(curr > max){
+                max = curr;
+            };
+        };
+
+        System.out.print("Total Sum of Subarray: "+ max);
+    }
     public static void main(String args[]){
         int arr[] = {1,-4,2,-9,8,1};
         // PrintSubArray(arr);
         // MaxSubArray(arr);
         // MaximumSubArray(arr);
-        PrefixSum(arr);
+        // PrefixSum(arr);
+        KadaneAlgo(arr);
     }
 }
